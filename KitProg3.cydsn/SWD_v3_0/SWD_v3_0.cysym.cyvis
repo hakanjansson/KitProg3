@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" release="PSoC Creator  4.4" xmlns="http://cypress.com/xsd/cyvis">
+  <Page index="0" name="" enabled="true" shapeCount="15">
+    <Rectangle shapeName="Shape_1" zorder="0">
+      <Location x="-54" y="-36" />
+      <Size width="108" height="12" />
+      <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="1">
+        <SolidBrush color="0, 0, 0" />
+      </Outline>
+      <Fill>
+        <SolidBrush color="255, 255, 255" />
+      </Fill>
+      <VisibilityExpression />
+      <ShapeTags />
+    </Rectangle>
+    <Rectangle shapeName="Shape_2" zorder="1">
+      <Location x="-54" y="-24" />
+      <Size width="108" height="72" />
+      <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="1">
+        <SolidBrush color="0, 0, 0" />
+      </Outline>
+      <Fill>
+        <SolidBrush color="220, 220, 220" />
+      </Fill>
+      <VisibilityExpression />
+      <ShapeTags />
+    </Rectangle>
+    <Annotation shapeName="Shape_3" zorder="2">
+      <Location x="-54" y="-36" />
+      <Size width="108" height="12" />
+      <Text>SWD</Text>
+      <Vertical value="false" />
+      <Fill>
+        <SolidBrush color="0, 0, 0" />
+      </Fill>
+      <Font value="Microsoft Sans Serif, 10pt" />
+      <TextAlignment value="MiddleCenter" />
+      <VisibilityExpression />
+      <ShapeTags />
+    </Annotation>
+    <Annotation shapeName="Shape_4" zorder="3">
+      <Location x="54" y="-36" />
+      <Text>SWD_v3_0_N</Text>
+      <Vertical value="false" />
+      <Expression>`=$INSTANCE_NAME`</Expression>
+      <Fill>
+        <SolidBrush color="0, 0, 0" />
+      </Fill>
+      <Font value="Microsoft Sans Serif, 10pt" />
+      <TextAlignment value="BottomRight" />
+      <VisibilityExpression />
+      <ShapeTags />
+    </Annotation>
+    <Line shapeName="Shape_5" zorder="4">
+      <Point x="-54" y="-18" />
+      <Point x="-48" y="-12" />
+      <Point x="-54" y="-6" />
+      <Outline dashStyle="Solid" startCap="Flat" endCap="Flat" lineJoin="Miter" weight="1">
+        <SolidBrush color="0, 0, 0" />
+      </Outline>
+      <VisibilityExpression />
+      <ShapeTags />
+    </Line>
+    <Terminal shapeName="Shape_6" zorder="5" name="clock" type="Symbol Digital Input">
+      <Location x="-60" y="-12" />
+      <ShowLabel value="true" />
+      <ShowWireGuide value="true" />
+      <VisibilityExpression />
+      <ShapeTags />
+      <MustConnectionIfVisible>true</MustConnectionIfVisible>
+      <IsBuriedPin>false</IsBuriedPin>
+      <DefaultExpression />
+      <Annotation zorder="6">
+        <Location x="-48" y="-12" />
+        <Text>clock</Text>
+        <Vertical value="false" />
+        <TextAlignment value="MiddleLeft" />
+      </Annotation>
+    </Terminal>
+    <Terminal shapeName="Shape_7" zorder="7" name="data_ready" type="Symbol Digital Input">
+      <Location x="-60" y="0" />
+      <ShowLabel value="true" />
+      <ShowWireGuide value="true" />
+      <VisibilityExpression />
+      <ShapeTags />
+      <MustConnectionIfVisible>true</MustConnectionIfVisible>
+      <IsBuriedPin>false</IsBuriedPin>
+      <DefaultExpression />
+      <Annotation zorder="8">
+        <Location x="-54" y="0" />
+        <Text>data_ready</Text>
+        <Vertical value="false" />
+        <TextAlignment value="MiddleLeft" />
+      </Annotation>
+    </Terminal>
+    <Terminal shapeName="Shape_8" zorder="9" name="RnW" type="Symbol Digital Input">
+      <Location x="-60" y="12" />
+      <ShowLabel value="true" />
+      <ShowWireGuide value="true" />
+      <VisibilityExpression />
+      <ShapeTags />
+      <MustConnectionIfVisible>true</MustConnectionIfVisible>
+      <IsBuriedPin>false</IsBuriedPin>
+      <DefaultExpression />
+      <Annotation zorder="10">
+        <Location x="-54" y="12" />
+        <Text>RnW</Text>
+        <Vertical value="false" />
+        <TextAlignment value="MiddleLeft" />
+      </Annotation>
+    </Terminal>
+    <Terminal shapeName="Shape_9" zorder="11" name="swdi" type="Symbol Digital Input">
+      <Location x="-60" y="24" />
+      <ShowLabel value="true" />
+      <ShowWireGuide value="true" />
+      <VisibilityExpression />
+      <ShapeTags />
+      <MustConnectionIfVisible>true</MustConnectionIfVisible>
+      <IsBuriedPin>false</IsBuriedPin>
+      <DefaultExpression />
+      <Annotation zorder="12">
+        <Location x="-54" y="24" />
+        <Text>swdi</Text>
+        <Vertical value="false" />
+        <TextAlignment value="MiddleLeft" />
+      </Annotation>
+    </Terminal>
+    <Terminal shapeName="Shape_10" zorder="13" name="swdo" type="Symbol Digital Output">
+      <Location x="60" y="-12" />
+      <ShowLabel value="true" />
+      <ShowWireGuide value="true" />
+      <VisibilityExpression />
+      <ShapeTags />
+      <MustConnectionIfVisible>true</MustConnectionIfVisible>
+      <IsBuriedPin>false</IsBuriedPin>
+      <DefaultExpression />
+      <Annotation zorder="14">
+        <Location x="54" y="-12" />
+        <Text>swdo</Text>
+        <Vertical value="false" />
+        <TextAlignment value="MiddleRight" />
+      </Annotation>
+    </Terminal>
+    <Terminal shapeName="Shape_11" zorder="15" name="parity" type="Symbol Digital Output">
+      <Location x="60" y="0" />
+      <ShowLabel value="true" />
+      <ShowWireGuide value="true" />
+      <VisibilityExpression />
+      <ShapeTags />
+      <MustConnectionIfVisible>true</MustConnectionIfVisible>
+      <IsBuriedPin>false</IsBuriedPin>
+      <DefaultExpression />
+      <Annotation zorder="16">
+        <Location x="54" y="0" />
+        <Text>parity</Text>
+        <Vertical value="false" />
+        <TextAlignment value="MiddleRight" />
+      </Annotation>
+    </Terminal>
+    <Terminal shapeName="Shape_12" zorder="17" name="parity_en" type="Symbol Digital Output">
+      <Location x="60" y="12" />
+      <ShowLabel value="true" />
+      <ShowWireGuide value="true" />
+      <VisibilityExpression />
+      <ShapeTags />
+      <MustConnectionIfVisible>true</MustConnectionIfVisible>
+      <IsBuriedPin>false</IsBuriedPin>
+      <DefaultExpression />
+      <Annotation zorder="18">
+        <Location x="54" y="12" />
+        <Text>parity_en</Text>
+        <Vertical value="false" />
+        <TextAlignment value="MiddleRight" />
+      </Annotation>
+    </Terminal>
+    <Terminal shapeName="Shape_13" zorder="19" name="out_en" type="Symbol Digital Output">
+      <Location x="60" y="24" />
+      <ShowLabel value="true" />
+      <ShowWireGuide value="true" />
+      <VisibilityExpression />
+      <ShapeTags />
+      <MustConnectionIfVisible>true</MustConnectionIfVisible>
+      <IsBuriedPin>false</IsBuriedPin>
+      <DefaultExpression />
+      <Annotation zorder="20">
+        <Location x="54" y="24" />
+        <Text>out_en</Text>
+        <Vertical value="false" />
+        <TextAlignment value="MiddleRight" />
+      </Annotation>
+    </Terminal>
+    <Terminal shapeName="Shape_14" zorder="21" name="swdck" type="Symbol Digital Output">
+      <Location x="60" y="36" />
+      <ShowLabel value="true" />
+      <ShowWireGuide value="true" />
+      <VisibilityExpression />
+      <ShapeTags />
+      <MustConnectionIfVisible>true</MustConnectionIfVisible>
+      <IsBuriedPin>false</IsBuriedPin>
+      <DefaultExpression />
+      <Annotation zorder="22">
+        <Location x="54" y="36" />
+        <Text>swdck</Text>
+        <Vertical value="false" />
+        <TextAlignment value="MiddleRight" />
+      </Annotation>
+    </Terminal>
+    <Terminal shapeName="Shape_16" zorder="23" name="skip_phase" type="Symbol Digital Input">
+      <Location x="-60" y="36" />
+      <ShowLabel value="true" />
+      <ShowWireGuide value="true" />
+      <VisibilityExpression />
+      <ShapeTags />
+      <MustConnectionIfVisible>true</MustConnectionIfVisible>
+      <IsBuriedPin>false</IsBuriedPin>
+      <DefaultExpression />
+      <Annotation zorder="24">
+        <Location x="-54" y="36" />
+        <Text>skip_phase</Text>
+        <Vertical value="false" />
+        <TextAlignment value="MiddleLeft" />
+      </Annotation>
+    </Terminal>
+  </Page>
+</Document>

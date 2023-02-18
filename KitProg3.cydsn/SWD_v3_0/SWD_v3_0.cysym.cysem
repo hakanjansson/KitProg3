@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" release="PSoC Creator  4.4" xmlns="http://cypress.com/xsd/cysem">
+  <ParameterDefinitions count="19">
+    <FormalParamDef name="CY_COMMENT" displayName="User Comments" type="string" builtin="true" visible="true" tab="Built-in" category="Settings" checkRange="false" displayOnHover="false" hardware="false" readonly="false">
+      <Value />
+      <Description>Instance-specific comments.</Description>
+      <Validators count="0" />
+    </FormalParamDef>
+    <FormalParamDef name="CY_CONST_CONFIG" displayName="Config Data in Flash" type="bool" builtin="true" visible="UsesDriverStyleApis()" tab="Built-in" category="Settings" checkRange="true" displayOnHover="false" hardware="false" readonly="false">
+      <Value>true</Value>
+      <Description>Controls whether the configuration structure is stored in flash (const, true) or SRAM (not const, false).</Description>
+      <Validators count="0" />
+    </FormalParamDef>
+    <FormalParamDef name="CY_REMOVE" displayName="Disable" type="bool" builtin="true" visible="true" tab="Built-in" category="Settings" checkRange="true" displayOnHover="false" hardware="false" readonly="false">
+      <Value>false</Value>
+      <Description>Determines whether or not the component should be removed during net listing.</Description>
+      <Validators count="0" />
+    </FormalParamDef>
+    <FormalParamDef name="CY_SUPPRESS_API_GEN" displayName="Suppress API Generation" type="bool" builtin="true" visible="true" tab="Built-in" category="Settings" checkRange="true" displayOnHover="false" hardware="false" readonly="false">
+      <Value>false</Value>
+      <Description>Determines whether or not an API file should be generated for this instance.</Description>
+      <Validators count="0" />
+    </FormalParamDef>
+    <FormalParamDef name="INSTANCE_NAME" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="true" displayOnHover="false" hardware="false" readonly="false">
+      <Value>`=GetShortInstanceName()`</Value>
+      <Description>Name of the schematic instance</Description>
+      <Validators count="1">
+        <Validator>
+          <Type>Error</Type>
+          <Expression>IsAssignableName($CY_INSTANCE_SHORT_NAME)</Expression>
+          <Message>`=UnAssignableNameErrorMsg($INSTANCE_NAME)`</Message>
+        </Validator>
+      </Validators>
+    </FormalParamDef>
+    <LocalParamDef name="CY_API_CALLBACK_HEADER_INCLUDE" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="false" displayOnHover="false" hardware="false" readonly="true">
+      <Value>`=GetApiCallbackHeaderInclude()`</Value>
+      <Description><![CDATA[Expands to the string “#include "cyapicallbacks.h"” if that header is present in the design, and expands to the empty string if that header is not present.]]></Description>
+      <Validators count="0" />
+    </LocalParamDef>
+    <LocalParamDef name="CY_COMPONENT_NAME" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="true" displayOnHover="false" hardware="false" readonly="true">
+      <Value>`=GetComponentName()`</Value>
+      <Description>Component name</Description>
+      <Validators count="0" />
+    </LocalParamDef>
+    <LocalParamDef name="CY_CONFIG_TITLE" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="true" displayOnHover="false" hardware="false" readonly="true">
+      <Value>`=GetShortInstanceName()`</Value>
+      <Description>Name displayed in the titlebar of the customizer</Description>
+      <Validators count="0" />
+    </LocalParamDef>
+    <LocalParamDef name="CY_CONTROL_FILE" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="false" displayOnHover="false" hardware="false" readonly="true">
+      <Value><![CDATA[<:default:>]]></Value>
+      <Description>Specifies the file name [excluding directory names] to use as a control file.</Description>
+      <Validators count="1">
+        <Validator>
+          <Type>Error</Type>
+          <Expression>IsValidFileName($CY_CONTROL_FILE)</Expression>
+          <Message>`=InvalidFileNameErrorMsg($CY_CONTROL_FILE)`</Message>
+        </Validator>
+      </Validators>
+    </LocalParamDef>
+    <LocalParamDef name="CY_DATASHEET_FILE" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="false" displayOnHover="false" hardware="false" readonly="true">
+      <Value><![CDATA[<:default:>]]></Value>
+      <Description>Specifies the file name [excluding directory names] to use as a datasheet file.</Description>
+      <Validators count="1">
+        <Validator>
+          <Type>Error</Type>
+          <Expression>IsValidFileName($CY_DATASHEET_FILE)</Expression>
+          <Message>`=InvalidFileNameErrorMsg($CY_DATASHEET_FILE)`</Message>
+        </Validator>
+      </Validators>
+    </LocalParamDef>
+    <LocalParamDef name="CY_FITTER_NAME" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="true" displayOnHover="false" hardware="false" readonly="true">
+      <Value>`=GetShortInstanceName()`</Value>
+      <Description>Hierarchical name in fitter format</Description>
+      <Validators count="0" />
+    </LocalParamDef>
+    <LocalParamDef name="CY_INSTANCE_SHORT_NAME" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="true" displayOnHover="false" hardware="false" readonly="true">
+      <Value>`=GetShortInstanceName()`</Value>
+      <Description>Short name of the schematic instance</Description>
+      <Validators count="0" />
+    </LocalParamDef>
+    <LocalParamDef name="CY_MAJOR_VERSION" displayName="Component Major Version" type="string" builtin="true" visible="true" tab="Built-in" category="Information" checkRange="true" displayOnHover="false" hardware="false" readonly="true">
+      <Value>`=GetMajorVersion()`</Value>
+      <Description>Major Version</Description>
+      <Validators count="0" />
+    </LocalParamDef>
+    <LocalParamDef name="CY_MINOR_VERSION" displayName="Component Minor Version" type="string" builtin="true" visible="true" tab="Built-in" category="Information" checkRange="true" displayOnHover="false" hardware="false" readonly="true">
+      <Value>`=GetMinorVersion()`</Value>
+      <Description>Minor Version</Description>
+      <Validators count="0" />
+    </LocalParamDef>
+    <LocalParamDef name="CY_PDL_DRIVER_NAME" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="false" displayOnHover="false" hardware="false" readonly="true">
+      <Value />
+      <Description><![CDATA[Name of the PDL driver that this component generates code for. Corresponds to Pack cGroup by default.  If the name is prefixed with 'bundle:' it will be treated as a bundle name (cBundle).]]></Description>
+      <Validators count="0" />
+    </LocalParamDef>
+    <LocalParamDef name="CY_PDL_DRIVER_REQ_VERSION" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="false" displayOnHover="false" hardware="false" readonly="true">
+      <Value />
+      <Description>Required version of the driver this component is compatible with in the form Major.Minor.Patch. Major version number must be an exact match for the PDL driver. Minor and Patch are minimum versions within a major version. Corresponds to Pack cVersion</Description>
+      <Validators count="0" />
+    </LocalParamDef>
+    <LocalParamDef name="CY_PDL_DRIVER_SUBGROUP" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="false" displayOnHover="false" hardware="false" readonly="true">
+      <Value />
+      <Description>Optional subgroup of the driver name.  Corresponds to Pack cSub.</Description>
+      <Validators count="0" />
+    </LocalParamDef>
+    <LocalParamDef name="CY_PDL_DRIVER_VARIANT" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="false" displayOnHover="false" hardware="false" readonly="true">
+      <Value />
+      <Description>Optional special variant of the driver name. Corresponds to Pack cVariant</Description>
+      <Validators count="0" />
+    </LocalParamDef>
+    <LocalParamDef name="CY_VERSION" displayName="" type="string" builtin="true" visible="false" tab="Built-in" category="[Hidden]" checkRange="true" displayOnHover="false" hardware="false" readonly="true">
+      <Value>`=GetMarketingNameWithVersion()`</Value>
+      <Description />
+      <Validators count="0" />
+    </LocalParamDef>
+  </ParameterDefinitions>
+  <EnumerationTypes count="0" />
+  <Signals count="10">
+    <Signal name="clock" type="" terminalCount="0" />
+    <Signal name="data_ready" type="" terminalCount="0" />
+    <Signal name="out_en" type="" terminalCount="0" />
+    <Signal name="parity" type="" terminalCount="0" />
+    <Signal name="parity_en" type="" terminalCount="0" />
+    <Signal name="RnW" type="" terminalCount="0" />
+    <Signal name="skip_phase" type="" terminalCount="0" />
+    <Signal name="swdck" type="" terminalCount="0" />
+    <Signal name="swdi" type="" terminalCount="0" />
+    <Signal name="swdo" type="" terminalCount="0" />
+  </Signals>
+  <Properties>
+    <Property name="Doc.APIPrefix" />
+    <Property name="Doc.CatalogPlacement"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<CatalogPlacements />]]></Property>
+    <Property name="Doc.CatalogVisibilityExpression">true</Property>
+    <Property name="Doc.CompanyAddr1" />
+    <Property name="Doc.CompanyAddr2" />
+    <Property name="Doc.CompanyAddr3" />
+    <Property name="Doc.CompanyName" />
+    <Property name="Doc.CustomContextMenuItems"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<MenuItems />]]></Property>
+    <Property name="Doc.DefaultInstanceName" />
+    <Property name="Doc.ExternalComponent">False</Property>
+    <Property name="Doc.SymbolSummary" />
+    <Property name="Doc.SymbolVisibleInCatalog">True</Property>
+    <Property name="Doc.URL" />
+  </Properties>
+</Document>

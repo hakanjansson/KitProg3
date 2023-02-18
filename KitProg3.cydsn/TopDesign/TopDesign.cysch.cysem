@@ -1692,7 +1692,7 @@
                             <bCountryCode>0</bCountryCode>
                             <bNumDescriptors>1</bNumDescriptors>
                             <bDescriptorType1>34</bDescriptorType1>
-                            <wDescriptorLength>63</wDescriptorLength>
+                            <wDescriptorLength>45</wDescriptorLength>
                           </m_value>
                           <Value d14p1:type="HIDDescriptor" xmlns:d14p1="http://www.w3.org/2001/XMLSchema-instance">
                             <bDescriptorType>HID</bDescriptorType>
@@ -1703,7 +1703,7 @@
                             <bCountryCode>0</bCountryCode>
                             <bNumDescriptors>1</bNumDescriptors>
                             <bDescriptorType1>34</bDescriptorType1>
-                            <wDescriptorLength>63</wDescriptorLength>
+                            <wDescriptorLength>45</wDescriptorLength>
                           </Value>
                           <Nodes />
                         </DescriptorNode>
@@ -4949,14 +4949,14 @@
           <m_value d6p1:type="HIDReportDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
             <bDescriptorType>HID_REPORT</bDescriptorType>
             <bLength>2</bLength>
-            <Name>Keyboard w/LED Feature Report</Name>
-            <wLength>63</wLength>
+            <Name>Keyboard</Name>
+            <wLength>45</wLength>
           </m_value>
           <Value d6p1:type="HIDReportDescriptor" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
             <bDescriptorType>HID_REPORT</bDescriptorType>
             <bLength>2</bLength>
-            <Name>Keyboard w/LED Feature Report</Name>
-            <wLength>63</wLength>
+            <Name>Keyboard</Name>
+            <wLength>45</wLength>
           </Value>
           <Nodes>
             <DescriptorNode Key="USBDescriptor2173">
@@ -5302,231 +5302,6 @@
                 <Item Code="128" Type="INPUT">
                   <Value>
                     <unsignedByte>129</unsignedByte>
-                    <unsignedByte>1</unsignedByte>
-                  </Value>
-                  <Kind>Bits</Kind>
-                </Item>
-              </Value>
-              <Nodes />
-            </DescriptorNode>
-            <DescriptorNode Key="USBDescriptor2187">
-              <m_value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="148" Type="REPORT_COUNT">
-                  <Value>
-                    <unsignedByte>149</unsignedByte>
-                    <unsignedByte>5</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </m_value>
-              <Value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="148" Type="REPORT_COUNT">
-                  <Value>
-                    <unsignedByte>149</unsignedByte>
-                    <unsignedByte>5</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </Value>
-              <Nodes />
-            </DescriptorNode>
-            <DescriptorNode Key="USBDescriptor2188">
-              <m_value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="116" Type="REPORT_SIZE">
-                  <Value>
-                    <unsignedByte>117</unsignedByte>
-                    <unsignedByte>1</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </m_value>
-              <Value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="116" Type="REPORT_SIZE">
-                  <Value>
-                    <unsignedByte>117</unsignedByte>
-                    <unsignedByte>1</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </Value>
-              <Nodes />
-            </DescriptorNode>
-            <DescriptorNode Key="USBDescriptor2189">
-              <m_value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="4" Type="USAGE_PAGE">
-                  <Value>
-                    <unsignedByte>5</unsignedByte>
-                    <unsignedByte>8</unsignedByte>
-                  </Value>
-                  <Kind>List</Kind>
-                </Item>
-              </m_value>
-              <Value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="4" Type="USAGE_PAGE">
-                  <Value>
-                    <unsignedByte>5</unsignedByte>
-                    <unsignedByte>8</unsignedByte>
-                  </Value>
-                  <Kind>List</Kind>
-                </Item>
-              </Value>
-              <Nodes />
-            </DescriptorNode>
-            <DescriptorNode Key="USBDescriptor2190">
-              <m_value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="24" Type="USAGE_MINIMUM">
-                  <Value>
-                    <unsignedByte>25</unsignedByte>
-                    <unsignedByte>1</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </m_value>
-              <Value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="24" Type="USAGE_MINIMUM">
-                  <Value>
-                    <unsignedByte>25</unsignedByte>
-                    <unsignedByte>1</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </Value>
-              <Nodes />
-            </DescriptorNode>
-            <DescriptorNode Key="USBDescriptor2191">
-              <m_value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="40" Type="USAGE_MAXIMUM">
-                  <Value>
-                    <unsignedByte>41</unsignedByte>
-                    <unsignedByte>5</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </m_value>
-              <Value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="40" Type="USAGE_MAXIMUM">
-                  <Value>
-                    <unsignedByte>41</unsignedByte>
-                    <unsignedByte>5</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </Value>
-              <Nodes />
-            </DescriptorNode>
-            <DescriptorNode Key="USBDescriptor2192">
-              <m_value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="176" Type="FEATURE">
-                  <Value>
-                    <unsignedByte>177</unsignedByte>
-                    <unsignedByte>2</unsignedByte>
-                  </Value>
-                  <Kind>Bits</Kind>
-                </Item>
-              </m_value>
-              <Value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="176" Type="FEATURE">
-                  <Value>
-                    <unsignedByte>177</unsignedByte>
-                    <unsignedByte>2</unsignedByte>
-                  </Value>
-                  <Kind>Bits</Kind>
-                </Item>
-              </Value>
-              <Nodes />
-            </DescriptorNode>
-            <DescriptorNode Key="USBDescriptor2193">
-              <m_value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="148" Type="REPORT_COUNT">
-                  <Value>
-                    <unsignedByte>149</unsignedByte>
-                    <unsignedByte>1</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </m_value>
-              <Value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="148" Type="REPORT_COUNT">
-                  <Value>
-                    <unsignedByte>149</unsignedByte>
-                    <unsignedByte>1</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </Value>
-              <Nodes />
-            </DescriptorNode>
-            <DescriptorNode Key="USBDescriptor2194">
-              <m_value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="116" Type="REPORT_SIZE">
-                  <Value>
-                    <unsignedByte>117</unsignedByte>
-                    <unsignedByte>3</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </m_value>
-              <Value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="116" Type="REPORT_SIZE">
-                  <Value>
-                    <unsignedByte>117</unsignedByte>
-                    <unsignedByte>3</unsignedByte>
-                  </Value>
-                  <Kind>Int</Kind>
-                </Item>
-              </Value>
-              <Nodes />
-            </DescriptorNode>
-            <DescriptorNode Key="USBDescriptor2195">
-              <m_value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="176" Type="FEATURE">
-                  <Value>
-                    <unsignedByte>177</unsignedByte>
-                    <unsignedByte>1</unsignedByte>
-                  </Value>
-                  <Kind>Bits</Kind>
-                </Item>
-              </m_value>
-              <Value d8p1:type="HIDReportItemDescriptor" xmlns:d8p1="http://www.w3.org/2001/XMLSchema-instance">
-                <bDescriptorType>HID_REPORT_ITEM</bDescriptorType>
-                <bLength>1</bLength>
-                <Item Code="176" Type="FEATURE">
-                  <Value>
-                    <unsignedByte>177</unsignedByte>
                     <unsignedByte>1</unsignedByte>
                   </Value>
                   <Kind>Bits</Kind>
@@ -15146,8 +14921,8 @@
       <Terminal name="PWM_16Hz.pwm" type="Instance Digital Output" />
     </Signal>
     <Signal name="clk_800Hz" type="Digital" terminalCount="5">
-      <Terminal name="PWM_16Hz.clock" type="Instance Digital Input" />
       <Terminal name="Timer_CSTick.clock" type="Instance Digital Input" />
+      <Terminal name="PWM_16Hz.clock" type="Instance Digital Input" />
       <Terminal name="Timer_RTS_Delay.clock" type="Instance Digital Input" />
       <Terminal name="Clk_Brea1.clock_out" type="Instance Digital Output" />
       <Terminal name="xor_2.term0" type="Instance Digital Input" />
@@ -15735,11 +15510,11 @@
       <Terminal name="SWDXRES.siovref_0" type="Instance Analog InOut" />
       <Terminal name="TCLK_SWDCLK.siovref_0" type="Instance Analog InOut" />
       <Terminal name="TMS_SWDIO.siovref_0" type="Instance Analog InOut" />
-      <Terminal name="Pin_UART_Tx.siovref_0" type="Instance Analog InOut" />
-      <Terminal name="SPI_MISO.siovref_0" type="Instance Analog InOut" />
-      <Terminal name="Pin_I2C_SCL.siovref_0" type="Instance Analog InOut" />
       <Terminal name="Pin_I2C_SDA.siovref_0" type="Instance Analog InOut" />
       <Terminal name="Pin_UART_Rx.siovref_0" type="Instance Analog InOut" />
+      <Terminal name="Pin_UART_Tx.siovref_0" type="Instance Analog InOut" />
+      <Terminal name="Pin_I2C_SCL.siovref_0" type="Instance Analog InOut" />
+      <Terminal name="SPI_MISO.siovref_0" type="Instance Analog InOut" />
     </Signal>
   </Signals>
   <Properties>
